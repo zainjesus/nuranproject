@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'apps.links',
     'apps.gallery',
     'apps.aboutnuran',
-    'apps.order'
+    'apps.order',
+    'apps.common'
 ]
 
 MIDDLEWARE = [
