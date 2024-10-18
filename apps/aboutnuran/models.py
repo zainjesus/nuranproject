@@ -10,7 +10,7 @@ class AboutCompany(SingletonModel):
 
     aboutProject = models.CharField(
         max_length=255,
-        verbose_name="О компании"
+        verbose_name="О проекте"
     )
 
     video_link = models.URLField(
