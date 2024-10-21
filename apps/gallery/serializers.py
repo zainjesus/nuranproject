@@ -5,7 +5,7 @@ from .models import Gallery, Stages
 class GallerySerializer(serializers.ModelSerializer):
     class Meta:
         model = Gallery
-        fields = '__all__'
+        exclude = ('description', )
 
 
 class StagesSerializer(serializers.ModelSerializer):

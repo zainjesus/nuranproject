@@ -7,6 +7,11 @@ class Gallery(models.Model):
         upload_to='gallery/'
     )
 
+    description = models.CharField(
+        max_length=100,
+        verbose_name="Описание"
+    )
+
     def save(self, *args, **kwargs):
         if self.image:
             compressed_image = compress_image(self.image)

@@ -13,7 +13,7 @@ class Order(models.Model):
     )
 
     def __str__(self):
-        return f'{self.full_name} {self.number}'
+        return f'{self.name} {self.number}'
 
     class Meta:
         verbose_name = 'Заказ на звонок'
