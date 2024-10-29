@@ -3,13 +3,12 @@ from solo.models import SingletonModel
 
 
 class AboutCompany(SingletonModel):
-    aboutCompany = models.CharField(
+    aboutCompany = models.TextField(
         max_length=255,
         verbose_name="О компании"
     )
 
-    aboutProject = models.CharField(
-        max_length=255,
+    aboutProject = models.TextField(
         verbose_name="О проекте"
     )
 
